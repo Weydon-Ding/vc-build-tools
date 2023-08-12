@@ -1,0 +1,9 @@
+version: '3'
+services:
+  msvc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - path\to\code:c:\code
+    command: msbuild c:\\code\\Project.sln /p:Configuration=Release /p:Platform=x64
